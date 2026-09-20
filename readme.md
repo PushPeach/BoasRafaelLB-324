@@ -2,7 +2,6 @@
 
 ## Aufgabe 2
 
-## Aufgabe 2
 
 ### pre-commit installieren
 
@@ -18,4 +17,12 @@ pre-commit install --hook-type pre-commit --hook-type pre-push
 - Manuell ausführen: `pre-commit run --all-files` (Commit-Hooks) bzw. `pre-commit run --hook-stage pre-push --all-files` (Tests).
 
 ## Aufgabe 4
-Erklären Sie hier, wie Sie das Passwort aus Ihrer lokalen `.env` auf Azure übertragen.
+
+### Passwort aus der lokalen `.env` nach Azure übertragen
+
+Die `.env`-Datei wird nicht ins Repository hochgeladen (sie steht in der `.gitignore`). Darum wird das Passwort in Azure als Umgebungsvariable gesetzt:
+
+1. Im Azure Portal die Web App öffnen.
+2. Links **Settings → Environment variables → App settings → + Add** wählen.
+3. Name: `PASSWORD`, Wert: `PushPeach` (mein GitHub-Benutzername).
+4. **Apply** klicken und den Neustart der App bestätigen.
