@@ -26,3 +26,7 @@ Die `.env`-Datei wird nicht ins Repository hochgeladen (sie steht in der `.gitig
 2. Links **Settings → Environment variables → App settings → + Add** wählen.
 3. Name: `PASSWORD`, Wert: `PushPeach` (mein GitHub-Benutzername).
 4. **Apply** klicken und den Neustart der App bestätigen.
+
+
+## Live-Version
+boasrafael-lb324-dga0e7gvgxhrc4bm.germanywestcentral-01.azurewebsites.net
